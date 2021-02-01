@@ -5,7 +5,6 @@ import androidx.room.*
 import com.tapaafandi.githubuserapp.data.local.model.UserFavoriteEntity
 import kotlinx.coroutines.flow.Flow
 
-
 @Dao
 interface UserFavoriteDao {
 

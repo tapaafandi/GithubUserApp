@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConsumerGithubApp</string>
+    <string name="favorite">Favorite</string>
+    <string name="no_favorite_user">Currently you don\'t have any favorite user.</string>
+</resources>

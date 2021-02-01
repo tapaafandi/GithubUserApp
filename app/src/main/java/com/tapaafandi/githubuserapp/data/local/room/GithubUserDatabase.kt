@@ -13,15 +13,18 @@ abstract class GithubUserDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: GithubUserDatabase? = null
 
-        fun getDatabase(context: Context): GithubUserDatabase? {
-            if (INSTANCE != null) {
-                synchronized(GithubUserDatabase::class) {
-                    INSTANCE = Room.databaseBuilder(
-                        context.applicationContext, GithubUserDatabase::class.java, "GithubUser.db"
-                    ).build()
-                }
+        fun getDatabase(context: Context): GithubUserDatabase {
+            val mInstance = INSTANCE
+            if (mInstance != null)
+                return mInstance
+
+            synchronized(GithubUserDatabase::class){
+                val mBuilder = Room.databaseBuilder(
+                    context.applicationContext, GithubUserDatabase::class.java, "GithubUser.db"
+                ).build()
+                INSTANCE = mBuilder
+                return mBuilder
             }
-            return INSTANCE
         }
     }
 
