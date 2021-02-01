@@ -24,11 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        binding.apply {
-            rvFavoriteUser.setHasFixedSize(true)
-            rvFavoriteUser.layoutManager = LinearLayoutManager(this@MainActivity)
-            rvFavoriteUser.adapter = favoriteAdapter
-        }
+        recyclerViewSetup()
 
         viewModel.setUserFavorite(this)
 
@@ -41,4 +37,11 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    private fun recyclerViewSetup() {
+        binding.rvFavoriteUser.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = favoriteAdapter
+        }
+    }
 }

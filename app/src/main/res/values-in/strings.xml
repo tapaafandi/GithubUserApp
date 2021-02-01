@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GithubUserApp</string>
+    <string name="favorite">Favorit</string>
+    <string name="search">Cari</string>
+    <string name="settings">Pengaturan</string>
+    <string name="searching_for">Mencari \"%1s\"</string>
+    <string name="search_user">Cari pengguna</string>
+    <string name="no_favorite_user">Saat ini kamu tidak memiliki pengguna favorit.</string>
+    <string name="favorite_user">Pengguna Favorit</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="notifications">Notifikasi</string>
+    <string name="bio">Bio</string>
+    <string name="repository">Repository</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="favorite_success_added">Berhasil menambahkan ke favorit!</string>
+    <string name="favorite_success_deleted">Berhasil menghapus dari favorit!</string>
+    <string name="loading">Loading…</string>
+    <string name="add_user_favorite">Tambah pengguna ke favorit</string>
+    <string name="at_09_00_am">Di 09:00 AM</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+
+</resources>
