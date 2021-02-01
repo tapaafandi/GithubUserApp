@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondaryWhite"
+    tools:context=".presentation.ui.detail_user.FollowersFragment">
+
+    <ProgressBar
+        android:id="@+id/pbSearchUser"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:indeterminateTint="@color/secondaryBlack"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLoading"
+        style="@style/textAppearanceCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/loading"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pbSearchUser"
+        app:layout_constraintStart_toEndOf="@+id/pbSearchUser"
+        app:layout_constraintTop_toTopOf="@+id/pbSearchUser"
+        app:layout_constraintVertical_bias="0.551"
+        tools:text="Loading..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFollowersUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_search_user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

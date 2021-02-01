@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GithubUserApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryWhite</item>
+        <item name="colorPrimaryVariant">@color/secondaryWhite</item>
+        <item name="colorOnPrimary">@color/secondaryBlack</item>
+
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.GithubUserApp.WithActionBar" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryWhite</item>
+        <item name="colorPrimaryVariant">@color/secondaryWhite</item>
+        <item name="colorOnPrimary">@color/secondaryBlack</item>
+
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorOnSurface">@color/secondaryBlack</item>
+        <item name="colorSecondary">@color/secondaryBlack</item>
+    </style>
+
+    <style name="textAppearanceHeadline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondaryBlack</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textAppearanceSubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/secondaryBlack</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textAppearanceSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/secondaryBlack</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textAppearanceBody1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/secondaryBlack</item>
+    </style>
+
+    <style name="textAppearanceCaption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/secondaryBlack</item>
+    </style>
+</resources>
